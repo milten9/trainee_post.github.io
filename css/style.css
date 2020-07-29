@@ -1,0 +1,322 @@
+html{
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 320px;
+}
+
+img{
+    display: inline-block;
+}
+
+a {
+     transition: 1s ease-out;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+/*...........font-family: 'Merriweather', serif; font-family: 'PT Sans Caption', sans-serif;..............*/
+
+
+/*.................................................HEADER.............................................*/
+
+.header{
+    background: #343c4e;
+    background-image: url(../img/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 400px;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    }
+.header-title{
+    font-size: 56px;
+    margin-bottom: 30px;
+    font-family: 'Merriweather', serif;
+    margin-top: -50px;
+    }
+.header-slogan {
+    font-size: 28px;
+    line-height: 42px;
+    }
+.icon{
+    font-size: 48px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    }
+/*.................................................PAGE-1.............................................*/
+
+.portfolio{
+    padding-top: 70px;
+    padding-bottom: 100px;
+    
+}
+
+.port-item{
+    margin-bottom: 20px;
+}
+.conteiner {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row:after{
+    clear: both;
+    content: "";
+    display: table;
+    }
+.col-4{
+    width: 360px;
+    margin-right: 30px;
+    float: left;
+    
+}
+
+.col-4:last-child{
+    margin-right: 0px;
+    }
+
+.title{
+    font-size: 46px;
+    margin-bottom: 60px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    
+}
+
+.port_img{
+    margin-bottom: 17px;
+}
+
+
+
+.port_title{
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 5px;
+    
+}
+
+.port_title a{
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.port_title a:hover{
+    color: #0052C2;
+    border-color: rgba(0, 82, 194, 0.3);
+}
+
+.port_text p{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+/*.................................................FOOTER.............................................*/
+
+.footer{
+    background-color: #061634;
+    color: #6479a2;
+    padding-top: 90px;
+    padding-bottom: 190px;
+}
+
+.footer p{
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+p.footer_name{
+    font-size: 26px;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+p.footer_social{
+    color: #FFF;
+    
+}
+
+p.footer_soc_icons{
+    font-size: 32px;
+    color: #FFF;
+    
+}
+
+p.footer_soc_icons a{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 1s ease-out;
+}
+
+p.footer_soc_icons a:last-child{
+    margin-right: 0px;
+}
+
+p.footer_soc_icons a:hover{
+    color: darkorange;
+}
+
+.button{
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFF;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 13px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: #FFF;
+    border-style: solid;
+    border-radius: 50px;
+    transition: 1s ease-out;
+    
+    
+}
+.button:hover{
+   color: #061634;
+    background-color: #FFF;
+}
+
+/*.................................................ORGANIKA-PORT.............................................*/
+
+
+.port-single-page{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    
+}
+
+.port-single-page img{
+    margin-bottom: 50px;
+    max-width: 100%;
+    height: auto;
+   
+}
+
+
+.button-back{
+    font-weight: 700;
+    text-decoration: none;
+    color: #061634;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 23px;
+    padding-right: 23px;
+    margin-bottom: 13px;
+    display: inline-block;
+    border-width: 2px;
+    border-color: #061634;
+    border-style: solid;
+    border-radius: 50px;
+    transition: 1s ease-out;
+    text-align: center;
+    
+}
+
+.button-back:hover{
+    color: #FFF;
+    background-color: #061634;
+}
+    
+/*.................................................MEDIA.............................................*/
+
+/*...........При ширине экрана в 1160пх и менее будет выполнен запрос.............*/
+@media (max-width: 1160px) {
+    
+    .conteiner{
+        width: 100%;
+        
+    }
+    
+    .col-4{
+        width: 100%;
+        /*...........реальная ширина widht :100% + border = 0 + padding = 15px + 15px = .............*/
+        box-sizing: border-box;
+        margin: 0;
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    
+    .header-title {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 15px;
+            
+    }
+    
+    .header{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .header-slogan {
+    font-size: 22px;
+    line-height: 38px;
+    }
+    
+    .portfolio{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+    
+    .title{
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+
+}
+
+.footer{
+    background-color: #061634;
+    color: #6479a2;
+    padding-top: 70px;
+    padding-bottom: 60px;
+}
+.port_img img{
+  max-width: 100%;
+    height: auto;
+}
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
